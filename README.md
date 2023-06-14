@@ -11,3 +11,14 @@
 한해의 월간 수입/지출 추세를 볼 수 있는 라인그래프를 제공하며,
 
 개인화를 위해 항목단위로 제거, 추가할 수 있도록 하였습니다.
+
+<hr/>
+
+사용한 외부 라이브러리
+
+MPAndroidChart by PhilJay
+https://github.com/PhilJay/MPAndroidChart
+
+PatternLockView by AritraRoy
+https://github.com/aritraroy/PatternLockView
+
