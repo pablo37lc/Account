@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvPercent"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:background="@color/plan"
+        android:textColor="@color/white"
+        android:text="99%" />
+
+    <TextView
+        android:id="@+id/tvTag"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center_vertical|end"
+        android:textSize="20sp"
+        android:paddingEnd="10dp"
+        android:text="TextView" />
+</LinearLayout>

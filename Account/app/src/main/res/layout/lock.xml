@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnPassword"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="49dp"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/lightGrey"
+            android:textColor="@color/black"
+            android:text="비밀번호" />
+
+        <Button
+            android:id="@+id/btnPattern"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="49dp"
+            android:backgroundTint="@color/lightGrey"
+            android:textColor="@color/black"
+            android:text="패턴" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="49dp"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/outcome"
+            android:text="해제" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=""
+            android:textSize="25sp" />
+    </FrameLayout>
+</LinearLayout>

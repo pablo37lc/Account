@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnIncome"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="49dp"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/lightGrey"
+            android:textColor="@color/black"
+            android:text="수입" />
+
+        <Button
+            android:id="@+id/btnBoth"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="49dp"
+            android:backgroundTint="@color/plan"
+            android:text="모두" />
+
+        <Button
+            android:id="@+id/btnOutcome"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="49dp"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/lightGrey"
+            android:textColor="@color/black"
+            android:text="지출" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnTag"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:enabled="false"
+                    android:backgroundTint="@color/plan"
+                    android:textColor="@color/white"
+                    android:text="태그" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_weight="1"
+                    android:textSize="25sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnDay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="10dp"
+                            android:backgroundTint="@color/lightGrey"
+                            android:textColor="@color/black"
+                            android:text="일" />
+
+                        <Button
+                            android:id="@+id/btnMonth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="10dp"
+                            android:backgroundTint="@color/lightGrey"
+                            android:textColor="@color/black"
+                            android:text="월" />
+
+                        <Button
+                            android:id="@+id/btnYear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="10dp"
+                            android:backgroundTint="@color/lightGrey"
+                            android:textColor="@color/black"
+                            android:text="년" />
+
+                        <Button
+                            android:id="@+id/btnAll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="10dp"
+                            android:text="전체" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="bottom|center"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="20sp"
+                            android:text="전체기간" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:gravity="top">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:layout_marginTop="10dp"
+                                android:textSize="20sp"
+                                android:text="데이터 개수 :" />
+
+                            <TextView
+                                android:id="@+id/tvNum"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginStart="5dp"
+                                android:textSize="20sp"
+                                android:text="00" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="130dp"
+                android:layout_height="49dp"
+                android:layout_margin="3dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/outcome"
+                android:text="삭제" />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

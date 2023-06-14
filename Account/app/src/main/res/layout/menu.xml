@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:background="#00000000"
+            android:scaleType="centerCrop"
+            android:rotation="180"
+            android:src="@drawable/enter" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="기타 설정"
+            android:textSize="30sp" />
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:background="#00000000"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            android:src="@drawable/add" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnLock"
+            android:layout_width="130dp"
+            android:layout_height="49dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/lightGrey"
+            android:textColor="@color/black"
+            android:text="잠금 화면" />
+
+        <Button
+            android:id="@+id/btnData"
+            android:layout_width="130dp"
+            android:layout_height="49dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/lightGrey"
+            android:textColor="@color/black"
+            android:text="데이터 삭제" />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:text="항목을 선택하세요" />
+    </FrameLayout>
+</LinearLayout>

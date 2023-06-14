@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="280dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textSize="30sp"
+        android:text="삭제합니다." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnNo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/lightGrey"
+            android:text="취소" />
+
+        <Button
+            android:id="@+id/btnYes"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/outcome"
+            android:text="확인" />
+    </LinearLayout>
+
+</LinearLayout>

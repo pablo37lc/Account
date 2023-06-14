@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:background="@color/plan"
+        android:textColor="@color/white"
+        android:text="TextView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="28dp"
+            android:layout_height="35dp"
+            android:scaleType="centerCrop"
+            android:background="#00000000"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tvYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:maxLength="4"
+            android:text="" />
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="28dp"
+            android:layout_height="35dp"
+            android:scaleType="centerCrop"
+            android:background="#00000000"
+            android:layout_marginRight="5dp"
+            android:rotation="180"
+            app:srcCompat="@drawable/back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/btnNo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:backgroundTint="#ffffff"
+            android:textColor="@color/plan"
+            android:text="취소" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/btnYes"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:backgroundTint="#ffffff"
+            android:textColor="@color/plan"
+            android:text="확인" />
+
+    </LinearLayout>
+
+</LinearLayout>
