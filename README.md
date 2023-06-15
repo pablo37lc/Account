@@ -1,5 +1,7 @@
 # Account
 
+<<Java, Android Studio>>
+
 모바일 가계부 앱입니다.
 
 앱을 소개하는 account.pdf를 첨부하였습니다.
